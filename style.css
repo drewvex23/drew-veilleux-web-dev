@@ -1,5 +1,44 @@
+.heading-text {
+    color: navy;
+    text-align: center;
+    margin: 0px;
+    line-break: strict;
+    font-weight: bold;
+}
+
+.organization-heading {
+    font-size: 18px;
+}
+
+.address-heading {
+    font-size: 13px;
+}
+
+.state-zip-heading {
+    font-size: 13px;
+}
+
+.title-heading {
+    font-size: 16px;
+    margin-bottom: 17px;
+}
 
 
+.geico-logo {
+    text-align: center;
+    margin: 0px;
+    color: navy;
+    font-family: fantasy;
+}
 
+.geico-text {
+    text-align: center;
+    margin: 0px;
+    color: navy;
+    font-size: 10px;
+    
+}
 
-
+.comments-text {
+    text-align: center;
+}
