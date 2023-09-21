@@ -23,10 +23,30 @@
     margin-bottom: 17px;
 }
 
+.left {
+    float: left;
+    width: 50%;
+    height: 400px;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    height: 400px;
+}
+
+.left-list {
+    margin: 15px;
+}
+
+.right-list {
+    margin: 15px;
+}
 
 .geico-logo {
     text-align: center;
     margin: 0px;
+    margin-top: 15px;
     color: navy;
     font-family: fantasy;
 }
@@ -36,9 +56,16 @@
     margin: 0px;
     color: navy;
     font-size: 10px;
-    
+    margin-bottom: 15px;
 }
 
-.comments-text {
-    text-align: center;
+.com-text {
+    font-size: 13px;
+    color: navy;
 }
+
+.legal-disclaimer {
+    font-size: 12px;
+    color: navy;
+}
+
