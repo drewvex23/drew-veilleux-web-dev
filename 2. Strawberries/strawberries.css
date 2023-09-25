@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.outter-box {
+   background-color: red; 
+   
+}
+.inside-box {
+    background-color: white;
+    border: 4px black solid;
+    width: 70%;
+    margin: 0px auto;
+    
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.intro-text {
+    margin: 20px 30px;
+    
+}
+
+
+
+.straw-image {
+    display: block;
+    margin: 0px auto;
+    border: 4px red dashed;
+    
+}
+
+.where-plant {
+    color: red;
+    font-size: 18px;
+    margin:  20px;
+    font-style: italic;
+}
+
+.conditions {
+    margin:  20px 20px;
+}
+
+.condition-list {
+    margin:  20px 20px;
+}
+
+.plant-instructions {
+    margin:  20px 20px;
+}
+
+.footer {
+    color: red;
+    font-size: 18px;
+    margin:  20px;
+    font-style: italic;
+    font-weight: bold;
+}
