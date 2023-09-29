@@ -1,14 +1,49 @@
-.container {
+.flex-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: 2px black solid;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    background-color: aqua;
 }
 
-.box {
-    width: 50px;
+.e1box1 {
+    width: 75px;
     height: 75px;
     text-align: center;
-    border: 2px black solid;
+    background-color: blue;
+    margin: 5px 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 50px;
+}
+
+.e1box2 {
+    width: 65px;
+    height: 75px;
+    text-align: center;
+    background-color: blue;
+    margin: 5px 15px;
+    color: white;
+    font-size: 50px;
+}
+
+.e1box3 {
+    width: 100px;
+    height: 75px;
+    text-align: center;
+    background-color: blue;
+    margin: 5px 15px;
+    color: white;
+    font-size: 50px;
+}
+
+.e1box4 {
+    width: 30px;
+    height: 150px;
+    text-align: center;
+    background-color: blue;
+    margin: 5px 15px;
+    color: white;
+    font-size: 50px;
 }
 
