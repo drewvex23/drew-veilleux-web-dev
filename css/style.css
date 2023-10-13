@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    background-color: gray;
+    color: rgb(219, 209, 209);
+}
+
+.fa-brands {
+    margin: 5px;
+    font-size: 25px;
+    background-color: inherit;
+}
+
+.fa-solid {
+    margin: 5px;
+    font-size: 25px;
+    background-color: inherit;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(47, 49, 49);
+    margin: 7px 0px;
+}
+
+.title {
+    font-size: 25px;
+    background-color: inherit;
+    margin: 10px 0px;
+}
+
+.list {
+    display: flex;
+    background-color: inherit;
+    margin: 10px 0px;
+}
+
+.list-item {
+    margin: 5px 12px;
+    background-color: inherit;
+}
+
+.header-links {
+    background-color: inherit;
+}
+
+.middle-text {
+    margin: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(47, 49, 49);
+}
+
+.footer-left {
+    background-color: inherit;
+}
+
+.footer-left-text {
+    background-color: inherit;
+    margin: 10px;
+}
+
+.footer-right {
+    background-color: inherit;
+}
+
+.footer-icons {
+    background-color: inherit;
+    
+}
