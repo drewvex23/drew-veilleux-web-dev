@@ -17,13 +17,6 @@
 }
 
 
-
-* {
-    margin: 0px;
-    background-color: gray;
-    color: rgb(219, 209, 209);
-}
-
 header {
     display: flex;
     justify-content: space-around;
@@ -84,4 +77,8 @@ footer {
 .footer-right {
     background-color: inherit;
     padding-top: 25px;
+}
+
+.header-links:hover {
+    border: 1px rgb(219, 209, 209) solid;
 }
