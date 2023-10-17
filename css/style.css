@@ -66,11 +66,17 @@ footer {
     margin: 10px;
 }
 
-.footer-right {
+.footer-middle {
     background-color: inherit;
+    padding-top: 15px;
 }
 
 .footer-icons {
     background-color: inherit;
     
+}
+
+.footer-right {
+    background-color: inherit;
+    padding-top: 25px;
 }
