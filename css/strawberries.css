@@ -14,7 +14,7 @@ body {
 
 .outter-box {
    background-color: red; 
-   
+   margin-bottom: 5px;
 }
 .inside-box {
     background-color: white;
