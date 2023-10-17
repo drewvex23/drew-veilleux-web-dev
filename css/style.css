@@ -18,6 +18,11 @@
 
 
 
+* {
+    margin: 0px;
+    background-color: gray;
+    color: rgb(219, 209, 209);
+}
 
 header {
     display: flex;
@@ -26,7 +31,7 @@ header {
     margin: 7px 0px;
 }
 
-.title {
+.header-title {
     font-size: 25px;
     background-color: inherit;
     margin: 10px 0px;

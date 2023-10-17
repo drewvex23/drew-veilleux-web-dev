@@ -1,6 +1,15 @@
+* {
+    margin: 0px;
+    background-color: gray;
+    color: rgb(219, 209, 209);
+    
+}
+
+
 body {
     font-family: sans-serif;
     font-size: 15px;
+    background-color: red;
 }
 
 .outter-box {
@@ -22,20 +31,25 @@ body {
     text-align: center;
     font-size: 30px;
     margin: 0px;
+    background-color: white;
+    color: black;
 }
 
 .intro-text {
     margin: 20px 30px;
-    
+    background-color: inherit;
+    color: black;
 }
 
-
+.image-container {
+    background-color: inherit;
+}
 
 .straw-image {
     display: block;
     margin: 0px auto;
     border: 4px red dashed;
-    
+    background-color: white;
 }
 
 .where-plant {
@@ -43,18 +57,30 @@ body {
     font-size: 18px;
     margin:  20px;
     font-style: italic;
+    background-color: inherit;
 }
 
 .conditions {
     margin:  20px 20px;
+    background-color: inherit;
+    color: black;
 }
 
 .condition-list {
     margin:  20px 20px;
+    background-color: white;
+    color: black;
+}
+
+.list-index {
+    background-color: inherit;
+    color: black;
 }
 
 .plant-instructions {
     margin:  20px 20px;
+    background-color: inherit;
+    color: black;
 }
 
 .footer {
@@ -63,4 +89,86 @@ body {
     margin:  20px;
     font-style: italic;
     font-weight: bold;
+    background-color: inherit;
+}
+
+
+
+
+
+
+.fa-brands {
+    margin: 5px;
+    font-size: 25px;
+    background-color: inherit;
+}
+
+.fa-solid {
+    margin: 5px;
+    font-size: 25px;
+    background-color: inherit;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(47, 49, 49);
+    margin: 7px 0px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.header-title {
+    font-size: 25px;
+    background-color: inherit;
+    margin: 10px 0px;
+    color: rgb(219, 209, 209);
+}
+
+.list {
+    display: flex;
+    background-color: inherit;
+    margin: 10px 0px;
+}
+
+.list-item {
+    margin: 5px 12px;
+    background-color: inherit;
+}
+
+.header-links {
+    background-color: inherit;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(47, 49, 49);
+    font-family: 'Times New Roman', Times, serif
+}
+
+.footer-left {
+    background-color: inherit;
+}
+
+.footer-left-text {
+    background-color: inherit;
+    margin: 10px;
+}
+
+.footer-middle {
+    background-color: inherit;
+    padding-top: 15px;
+}
+
+.footer-icons {
+    background-color: inherit;
+    
+}
+
+.footer-right {
+    background-color: inherit;
+    padding-top: 25px;
 }
