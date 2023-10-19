@@ -114,10 +114,12 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(47, 49, 49);
     margin: 7px 0px;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .header-title {
@@ -144,9 +146,11 @@ header {
 
 footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgb(47, 49, 49);
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .footer-left {

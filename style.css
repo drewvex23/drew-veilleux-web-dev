@@ -2,6 +2,7 @@
     margin: 0px;
     background-color: gray;
     color: rgb(219, 209, 209);
+    box-sizing: border-box;
 }
 
 .fa-brands {
@@ -19,9 +20,11 @@
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(47, 49, 49);
     margin: 7px 0px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .header-title {
@@ -51,8 +54,11 @@ header {
 
 footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgb(47, 49, 49);
+    margin: 20% 0px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .footer-left {
