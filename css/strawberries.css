@@ -172,3 +172,9 @@ footer {
     background-color: inherit;
     padding-top: 25px;
 }
+
+.header-links:hover {
+    border: 1px rgb(219, 209, 209) solid;
+    font-style: italic;
+    font-weight: bold;
+}
