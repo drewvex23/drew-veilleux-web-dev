@@ -47,6 +47,7 @@ header {
 
 .header-links {
     background-color: inherit;
+    border: 1px transparent solid;
 }
 
 .middle-text {
