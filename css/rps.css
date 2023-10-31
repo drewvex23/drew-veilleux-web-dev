@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    color: rgb(219, 209, 209);
+}
+
+body {
+    background-color: rgb(184, 209, 231);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    padding: .75em 0;
+}
+
+.choice-container div {
+    width: 45%;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 1em;
+    /* clamp(min(fixed), preferred(rel), max(fixed)) */
+    font-size: clamp(14px, 3vw, 40px);
+}
+
+img {
+    width: 90%;
+    height: auto;
+    margin: 1em 0;
+}
+
+button {
+    margin: 1em .5em;
+    padding: .5em .75em;
+    font-size: clamp(16px, 3vw, 32px);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(80, 80, 224);
+    color:rgb(197, 212, 226)
+}
+
+
+
+
+
+
+
+
+
+
+.fa-brands {
+    margin: 5px;
+    font-size: 25px;
+    background-color: inherit;
+}
+
+.fa-solid {
+    margin: 5px;
+    font-size: 25px;
+    background-color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(47, 49, 49);
+    margin: 7px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header-title {
+    font-size: 25px;
+    background-color: inherit;
+    margin: 10px 0px;
+    color: rgb(219, 209, 209);
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    background-color: inherit;
+    margin: 10px 0px;
+}
+
+.list-item {
+    margin: 5px 12px;
+    background-color: inherit;
+}
+
+.header-links {
+    background-color: inherit;
+    border: 1px transparent solid;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(47, 49, 49);
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer-left {
+    background-color: inherit;
+}
+
+.footer-left-text {
+    background-color: inherit;
+    margin: 10px;
+}
+
+.footer-middle {
+    background-color: inherit;
+    padding-top: 15px;
+}
+
+.footer-icons {
+    background-color: inherit;
+    
+}
+
+.footer-right {
+    background-color: inherit;
+    padding-top: 25px;
+}
+
+.header-links:hover {
+    border: 1px rgb(219, 209, 209) solid;
+    font-style: italic;
+    font-weight: bold;
+}
