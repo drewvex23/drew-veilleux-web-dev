@@ -78,6 +78,8 @@ function resetGame() {
     userScoreDisplay.innerText = userScore
     compScoreDisplay.innerText = compScore
     results.innerText = 'Start Game'
+    userImg.src = "../Images/Rps-images/rps4.png"
+    compImg.src = "../Images/Rps-images/rps4.png" 
 }
 
 function resetScore() {

@@ -32,9 +32,17 @@ main {
     margin-top: 0px;
 }
 
+.user-img {
+    width: 196px;
+}
+
+.comp-img {
+    width: 196px;
+}
+
 .choice-container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1200px; 
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
