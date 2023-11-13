@@ -32,14 +32,6 @@ main {
     margin-top: 0px;
 }
 
-.user-img {
-    width: 196px;
-}
-
-.comp-img {
-    width: 196px;
-}
-
 .choice-container {
     width: 90%;
     max-width: 1200px; 
@@ -78,6 +70,13 @@ img {
     height: auto;
     margin: 1em 0;
     
+}
+
+@media (max-width: 900px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 button {
