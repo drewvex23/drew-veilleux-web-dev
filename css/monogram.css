@@ -27,12 +27,12 @@ header {
 }
 
 .header-left p {
-    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    font-size: clamp(1.2rem, 3.5vw, 2rem);
     margin-left: .25em;
 }
 
 .header-left i {
-    font-size: clamp(.75rem, 5.5vw, 2rem);
+    font-size: clamp(.75rem, 3.5vw, 1.5rem);
     margin-left: .25em;
 }
 
@@ -44,7 +44,7 @@ header {
 
 nav a {
     text-decoration: none;
-    font-size: clamp(.75rem, 1.5vw, 4rem);
+    font-size: clamp(.5rem, 1.25vw, 3rem);
     color: #ff8b68;
     text-transform: uppercase;
     margin: 0 1em;
@@ -84,20 +84,23 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1em;
-    padding: 1em 0;
+    padding: 2em;
     background-color: #f0efed;
 }
 
 .product {
-    width: 100%;
-
+    width: clamp(25em, 48%, 60em);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
 }
 
 .product img {
-    width: 100%;
-    height: 35vh;
+    display: inline-block;
+    aspect-ratio: 1/1;
 }
 
 
@@ -119,13 +122,88 @@ nav a:hover {
 
 footer {
     padding-left: 2.5vw;
+    padding-right: 2.5vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
+    justify-content: space-between;
+    background-color: #1a2456;
+    color: #ff8b68;
+    
+}
+
+footer a {
+    color: #ff8b68;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .footer-col {
     width: 50%;
     margin: .5em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col a {
+    margin: .25em 0;
+}
+
+.footer-col h5 {
+    margin-bottom: .25em;
+    margin-top: .5em;
+    text-transform: uppercase;
+}
+
+.footer-col p {
+    margin: .25em 0;
+    margin-top: .5em;
+}
+
+.footer-col form {
+    margin: .25em 0;
+
+}
+
+.footer-col input {
+    width: 55%;
+    height: 2em;
+    background-color: #1a2456;
+    border: .01em solid #ff8b68;
+    padding-left: .25em;
+    color: #ff8b68;
+}
+
+.footer-col button {
+    width: 35%;
+    margin-left: 1em;
+    border-radius: 1em;
+    height: 2em;
+    background-color: #ff8b68;
+    color: #1a2456;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .75rem;
+    border: none;
+}
+
+.footer-col i {
+    margin: .5em 0;
+    border-radius: 50%;
+    
+}
+
+.fa-brands {
+    font-size: 1.5em;
+}
+
+.fa-regular {
+    font-size: .75em;
+}
+
+@media (max-width: 700px) {
+    footer {
+        flex-direction: column-reverse;
+    }
 }
