@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 clamp(1em, 4vw, 2.5rem);
+}
+
+.header-left {
+    font-size: 1.75rem;
+    display: flex;
+    margin: 1em 0;
+}
+
+.header-right {
+    font-size: 1.5rem;
+    display: flex;
+    margin: 1.25em 0;
+    padding-top: .25em;
+}
+
+.header-left a{
+    color: #fff;
+    text-decoration: none;
+    padding-top: .1em;
+}
+
+.header-left a:hover {
+    text-decoration: underline;
+}
+
+.header-left p {
+    margin-right: .3em;
+    padding-top: .1em;
+}
+
+.header-left i {
+    margin-right: .25em;
+    background-color: #fff;
+    color: #000000;
+    padding: .2em;
+    border-radius: 0.5em;
+}
+
+.header-right i {
+    margin-left: .75em;
+}
+
