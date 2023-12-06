@@ -19,6 +19,10 @@ header {
     padding-top: .35em;
 }
 
+.header-title-divider {
+    font-weight: 100;
+}
+
 .header-right {
     font-size: 1.5rem;
     display: flex;
@@ -33,7 +37,7 @@ header {
     margin-right: .3em;
 }
 
-.header-left a:hover {
+.header-title-help:hover {
     text-decoration: underline;
 }
 
@@ -54,6 +58,11 @@ header {
 
 .header-right i {
     margin-left: .75em;
+}
+
+.fa-magnifying-glass:hover {
+    
+    font-size: 1.55rem;
 }
 
 .search-section {
@@ -119,6 +128,10 @@ main a {
     text-decoration: none;
     font-size: 1.2rem;
     color: #4C5FD5;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
 
 main h2 {
@@ -204,4 +217,8 @@ footer a {
     padding-bottom: .2em;
     font-size: 1.5rem;
     margin-bottom: 1em;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
