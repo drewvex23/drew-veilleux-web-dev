@@ -50,9 +50,30 @@ header {
     border: 1px transparent solid;
 }
 
-.middle-text {
-    margin: 15px;
+
+main {
+    display: flex;
+    flex-direction: column;
 }
+
+.full-name-sect {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+
+}
+
+input {
+    display: block;
+}
+
+
+
+
+
 
 footer {
     display: flex;

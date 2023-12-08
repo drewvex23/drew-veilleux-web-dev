@@ -37,6 +37,10 @@ header {
     margin-right: .3em;
 }
 
+.search-area:focus {
+    border: none
+}
+
 .header-title-help:hover {
     text-decoration: underline;
 }
