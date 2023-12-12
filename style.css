@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 .fa-brands {
     margin: 5px;
     font-size: 25px;
@@ -51,27 +56,78 @@ header {
 }
 
 
-main {
-    display: flex;
-    flex-direction: column;
-}
 
-.full-name-sect {
-    display: flex;
-    flex-direction: row;
-}
 
-form {
-    display: flex;
-
-}
 
 input {
     display: block;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 7vw;
+}
 
+.job-app {
+    padding: 1em 0;
+}
 
+.full-name-sect {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1em 0;
+    padding-bottom: 2em;
+}
+
+.full-name-sect form {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3em;
+}
+
+.full-name-sect form div {
+    padding-right: 1em;
+}
+
+.current-address-sect {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
+.current-address-inner {
+    width: 100%;
+    padding-bottom: .5em;
+}
+
+.top-sect {
+    width: 100%;
+}
+
+.top-sect div {
+    padding-bottom: .5em;
+}
+
+.mid-section-address {
+    display: flex;
+
+}
+
+.mid-section-address div {
+    padding-right: 1em;
+    padding-bottom: .5em;
+}
+
+.bottom-section-address {
+    display: flex;
+}
+
+.bottom-section-address div {
+    padding-right: 1em;
+}
 
 
 
