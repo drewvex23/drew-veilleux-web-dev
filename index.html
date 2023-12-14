@@ -90,51 +90,69 @@
                         </div>
                         
                         <div>
-                            <input size="24" type="text" id="country">
-                            <label for="country">Country</label>
-                        </div>
+                            <select name="Country" class="country-select" required>
+                                <option value="please-select">Please Select</option>
+                                <option value="united-states">United States</option>
+                                <option value="paraguay">Paraguay</option>
+                                <option value="monaco">Monaco</option>
+                                <option value="germany">Germany</option>
+                                <option value="mexico">Mexico</option>
+                                
+                            </select>
+                            <label for="countrty">Country</label>
                         
+                        </div>
                     </div>
                 </div>
             </form>
         </div>
 
-        <div class="email-address-sect">
+        <div class="email-address-sect" >
             <p>Email Address <span style="color: red;">*</span></p>
             <form>
-                <input type="text">
+                <input size="55" type="email" placeholder="ex: myname@example.com">
             </form>
         </div>
 
         <div class="phone-number-sect">
             <p>Phone Number</p>
             <form>
-                <input type="text" name="" id="area-code">
-                <label for="">Area Code</label>
-                <p>-</p>
-                <input type="text" name="" id="phone-number">
-                <label for="phone-number">Phone Number</label>
+                <div>
+                    <input type="text" name="" id="area-code" size="23">
+                    <label for="">Area Code</label>
+                </div>
+                <p class="dash-line"> - </p>
+                <div>
+                    <input type="text" name="" id="phone-number" size="23">
+                    <label for="phone-number">Phone Number</label>
+                </div>
+                
             </form>
         </div>
 
         <div class="applying-position-sect">
             <p>Applying for Position <span style="color: red;">*</span></p>
             <form>
-                <input type="text">
+                <select name="" id="" required>
+                    <option value="pkease-select">Please Select</option>
+                    <option value="ui-ux-dev">UI/UX Developer</option>
+                    <option value="front-end-dev">Front-End Developer</option>
+                    <option value="back-end-dev">Back-End Developer</option>
+                </select>
             </form>
         </div>
 
         <div class="strt-date-sect">
             <p>Start date</p>
             <form>
-                <input type="text">
+                <input type="date">
             </form>
         </div>
 
         <div class="upload-resume-sect">
             <p>Upload Resume <span style="color: red;">*</span></p>
             <form>
-                <input type="text">
+                <input type="file">
                 <label for=""></label>
             </form>
         </div>
@@ -143,13 +161,14 @@
             <p>Take Photo</p>
             <form>
                 <button>Take Photo</button>
+                
             </form>
         </div>
 
         <div class="agree-terms-sect">
             <form>
-                <input type="text">
-                <label for=""></label>
+                <input type="checkbox">
+                <label for="checkbox">I agree <a href="" style="color: aqua; text-decoration: none;">terms & conditions</a>. <span style="color: red;">*</span></label>
             </form>
         </div>
 

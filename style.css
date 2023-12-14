@@ -61,6 +61,11 @@ header {
 
 input {
     display: block;
+    border: 1px black solid;
+}
+
+select {
+    display: block;
 }
 
 main {
@@ -128,6 +133,112 @@ main {
 .bottom-section-address div {
     padding-right: 1em;
 }
+
+.country-select {
+    width: 205px;
+    border: 1px black solid;
+}
+
+.email-address-sect {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.phone-number-sect {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.phone-number-sect form {
+    display: flex;
+}
+
+::placeholder {
+    color: rgb(219, 209, 209);
+}
+
+.dash-line {
+    padding: 0 .5em;
+}
+
+.applying-position-sect {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 11.5em;
+    padding-bottom: 1em;
+}
+
+.applying-position-sect select {
+    border: 1px black solid;
+    width: 250px;
+}
+
+.strt-date-sect {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 11.5em;
+    padding-bottom: 1em;
+}
+
+.strt-date-sect input {
+    width: 250px;
+}
+
+.upload-resume-sect {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 11.5em;
+    padding-bottom: 1em;
+}
+
+.upload-resume-sect input {
+    border: none;
+}
+
+.take-photo-sect {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8.5em;
+    padding-bottom: 1em;
+}
+
+.take-photo-sect button {
+    width: 300px;
+    height: 2.5em;
+    border: 1px black solid;
+    border-radius: .5em;
+}
+
+.agree-terms-sect form{
+    display: flex;
+}
+
+.agree-terms-sect input {
+    margin-right: .5em;
+}
+
+.agree-terms-sect {
+    padding-bottom: 2em;
+}
+
+.submit-sect form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.submit-sect button {
+    height: 2em;
+    width: 5em;
+    border-radius: .5em;
+}
+
+
+
 
 
 
