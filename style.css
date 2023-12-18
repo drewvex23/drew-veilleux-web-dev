@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-p {
+main p {
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -59,6 +59,27 @@ header {
 
 
 
+
+section {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f7daeb;
+    height: 51em;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 input {
     display: block;
     border: 1px black solid;
@@ -87,16 +108,18 @@ main {
     padding-bottom: 2em;
 }
 
-.full-name-sect form {
+.full-name-divider {
     display: flex;
-    justify-content: space-between;
-    margin-left: 3em;
+    flex-direction: row;
+    margin-right: 1em;
 }
 
-.full-name-sect form div {
-    padding-right: 1em;
+.full-name-divider div {
+    margin-right: 1em;
 }
 
+
+ 
 .current-address-sect {
     display: flex;
     justify-content: space-between;
@@ -153,7 +176,11 @@ main {
     padding-bottom: 1em;
 }
 
-.phone-number-sect form {
+.phone-number-sect{
+    display: flex;
+}
+
+.phone-num-divider {
     display: flex;
 }
 
@@ -191,8 +218,8 @@ main {
 .upload-resume-sect {
     display: flex;
     justify-content: space-between;
-    padding-right: 11.5em;
     padding-bottom: 1em;
+    padding-right: 11.5em;
 }
 
 .upload-resume-sect input {
@@ -213,7 +240,7 @@ main {
     border-radius: .5em;
 }
 
-.agree-terms-sect form{
+.agree-terms-sect{
     display: flex;
 }
 
@@ -225,17 +252,22 @@ main {
     padding-bottom: 2em;
 }
 
-.submit-sect form{
+.submit-sect{
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.submit-sect button {
+.submit-sect input {
     height: 2em;
     width: 5em;
     border-radius: .5em;
 }
+
+
+
+
+
 
 
 

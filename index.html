@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Drew Veilleux</title>
 </head>
 <body>
@@ -20,163 +23,183 @@
 
     </header>
     
+
+    <section>
+
+
+
+
+    </section>
+
     <main>
-        <div class="job-app">
-            <h1>Job Application</h1>
-            <p>Please complete the form below below to apply for a position with us.</p>
-        </div>
-        <hr>
 
-        <div class="full-name-sect">
-            
-            <div class="full-title">
-                <p>Full Name <span style="color: red;">*</span></p>
+        <form action="job-app">
+            <div class="job-app">
+                <h1>Job Application</h1>
+                <p>Please complete the form below below to apply for a position with us.</p>
             </div>
-            <form>
-
-                <div class="indiv-first">
-                    <input size="12" type="text" id="first-name">
-                    <label for="first-name">First Name</label>
-                </div>
-                    
-                <div class="indiv-middle">
-                    <input size="12" type="text" name="" id="middle-name">
-                    <label for="middle-name">Middle Name</label>
-                </div>
-                <div class="indiv-last">
-                    <input size="15" type="text" name="" id="last-name">
-                    <label for="last-name">Last Name</label>
+            <hr>
+    
+            <div class="full-name-sect">
+                
+                <div class="full-title">
+                    <p>Full Name <span style="color: red;">*</span></p>
                 </div>
                 
+                <div class="full-name-divider">
+                    <div class="indiv-first">
+                        <input size="12" type="text" id="first-name" required>
+                        <label for="first-name">First Name</label>
+                    </div>
+                            
+                    <div class="indiv-middle">
+                        <input size="12" type="text" name="" id="middle-name" required>
+                        <label for="middle-name">Middle Name</label>
+                    </div>
+                    <div class="indiv-last">
+                        <input size="15" type="text" name="" id="last-name" required>
+                        <label for="last-name">Last Name</label>
+                    </div>
+                </div>
                 
-            </form>
-        </div>
-
-        <div class="current-address-sect">
-            <div class="add-title">
-                <p>Current Address</p>
-            </div>
-            
-            <form>
-                <div class="current-address-inner">
-                    <div class="top-sect">
-                        <div>
-                            <input size="55" type="text" id="street-address">
-                            <label for="street-address">Street Address</label>
-                        </div>
-                        
-                        <div>
-                            <input size="55" type="text" id="street-address2">
-                            <label for="street-address2">Street Address Line 2</label>
-                        </div>
-                        
-                    </div>
                     
-                    <div class="mid-section-address">
-                        <div>
-                            <input size="24" type="text" id="city">
-                            <label for="city">City</label>
-                        </div>
-                        <div>
-                            <input size="24" type="text" id="state-province">
-                            <label for="state-province">State / Province</label>
-                        </div>
-                        
-                    </div>
-                    <div class="bottom-section-address">
-                        <div>
-                            <input size="24" type="text" id="postal-zip">
-                            <label for="postal-zip">Postal / Zip Code</label>
-                        </div>
-                        
-                        <div>
-                            <select name="Country" class="country-select" required>
-                                <option value="please-select">Please Select</option>
-                                <option value="united-states">United States</option>
-                                <option value="paraguay">Paraguay</option>
-                                <option value="monaco">Monaco</option>
-                                <option value="germany">Germany</option>
-                                <option value="mexico">Mexico</option>
+                    
+                
+            </div>
+    
+            <div class="current-address-sect">
+                
+                <div class="add-title">
+                    <p>Current Address</p>
+                </div>
+                
+                <div>
+                    <div class="current-address-inner">
+                        <div class="top-sect">
+                            <div>
+                                <input size="55" type="text" id="street-address">
+                                <label for="street-address">Street Address</label>
+                            </div>
                                 
-                            </select>
-                            <label for="countrty">Country</label>
-                        
+                            <div>
+                                <input size="55" type="text" id="street-address2">
+                                <label for="street-address2">Street Address Line 2</label>
+                            </div>
+                                
+                        </div>
+                            
+                        <div class="mid-section-address">
+                            <div>
+                                <input size="24" type="text" id="city">
+                                <label for="city">City</label>
+                            </div>
+                            <div>
+                                <input size="24" type="text" id="state-province">
+                                <label for="state-province">State / Province</label>
+                            </div>
+                                
+                        </div>
+                        <div class="bottom-section-address">
+                            <div>
+                                <input size="24" type="text" id="postal-zip">
+                                <label for="postal-zip">Postal / Zip Code</label>
+                            </div>
+                                
+                            <div>
+                                <select name="Country" class="country-select" required>
+                                    <option value="please-select">Please Select</option>
+                                    <option value="united-states">United States</option>
+                                    <option value="paraguay">Paraguay</option>
+                                    <option value="monaco">Monaco</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="mexico">Mexico</option>
+                                        
+                                </select>
+                                <label for="countrty">Country</label>
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
-        </div>
-
-        <div class="email-address-sect" >
-            <p>Email Address <span style="color: red;">*</span></p>
-            <form>
-                <input size="55" type="email" placeholder="ex: myname@example.com">
-            </form>
-        </div>
-
-        <div class="phone-number-sect">
-            <p>Phone Number</p>
-            <form>
-                <div>
-                    <input type="text" name="" id="area-code" size="23">
-                    <label for="">Area Code</label>
-                </div>
-                <p class="dash-line"> - </p>
-                <div>
-                    <input type="text" name="" id="phone-number" size="23">
-                    <label for="phone-number">Phone Number</label>
+                </div>                
+                
+                
+            </div>
+    
+            <div class="email-address-sect" >
+                <p>Email Address <span style="color: red;">*</span></p>
+                
+                <input size="55" type="email" placeholder="ex: myname@example.com" required>
+                
+            </div>
+    
+            <div class="phone-number-sect">
+                <p>Phone Number</p>
+                
+                <div class="phone-num-divider">
+                    <div>
+                        <input type="text" name="" id="area-code" size="23">
+                        <label for="">Area Code</label>
+                    </div>
+                    <p class="dash-line"> - </p>
+                    <div>
+                        <input type="text" name="" id="phone-number" size="23">
+                        <label for="phone-number">Phone Number</label>
+                    </div>
                 </div>
                 
-            </form>
-        </div>
-
-        <div class="applying-position-sect">
-            <p>Applying for Position <span style="color: red;">*</span></p>
-            <form>
+                    
+                
+            </div>
+    
+            <div class="applying-position-sect">
+                <p>Applying for Position <span style="color: red;">*</span></p>
+                
                 <select name="" id="" required>
                     <option value="pkease-select">Please Select</option>
                     <option value="ui-ux-dev">UI/UX Developer</option>
                     <option value="front-end-dev">Front-End Developer</option>
                     <option value="back-end-dev">Back-End Developer</option>
                 </select>
-            </form>
-        </div>
-
-        <div class="strt-date-sect">
-            <p>Start date</p>
-            <form>
-                <input type="date">
-            </form>
-        </div>
-
-        <div class="upload-resume-sect">
-            <p>Upload Resume <span style="color: red;">*</span></p>
-            <form>
-                <input type="file">
-                <label for=""></label>
-            </form>
-        </div>
-
-        <div class="take-photo-sect">
-            <p>Take Photo</p>
-            <form>
-                <button>Take Photo</button>
                 
-            </form>
-        </div>
-
-        <div class="agree-terms-sect">
-            <form>
-                <input type="checkbox">
+            </div>
+    
+            <div class="strt-date-sect">
+                <p>Start date</p>
+                
+                <input type="date">
+                
+            </div>
+    
+            <div class="upload-resume-sect">
+                <p>Upload Resume <span style="color: red;">*</span></p>
+                
+                <input type="file" required>
+                
+            </div>
+    
+            <div class="take-photo-sect">
+                <p>Take Photo</p>
+                
+                <button>Take Photo</button>
+                    
+                
+            </div>
+    
+            <div class="agree-terms-sect">
+                
+                <input type="checkbox" required>
                 <label for="checkbox">I agree <a href="" style="color: aqua; text-decoration: none;">terms & conditions</a>. <span style="color: red;">*</span></label>
-            </form>
-        </div>
+                
+            </div>
+    
+            <div class="submit-sect">
+                
+                <input type="submit"></input>
+                
+            </div>
+        </form>
 
-        <div class="submit-sect">
-            <form>
-                <button>Submit</button>
-            </form>
-        </div>
+        
 
     </main>
     
