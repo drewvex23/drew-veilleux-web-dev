@@ -64,13 +64,45 @@ section {
     font-family: 'Work Sans', sans-serif;
     background-color: #f7daeb;
     height: 51em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    background-color: #f7daeb;
+}
+
+.hero-image img {
+    width: 100%;
     
 }
 
+.hover-div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20em;
+    border-radius: .5em;
+    padding: 0 1.5em;
+    background-color: #fff5f5;
+}
 
+.header-part {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-top: 1em;
+    background-color: ;
+}
 
-
-
+.header-part h1 {
+    margin-left: 1em;
+}
 
 
 
