@@ -84,9 +84,9 @@ section {
 .hover-div {
     width: 80%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     position: absolute;
-    top: 20em;
+    top: 18em;
     border-radius: .5em;
     padding: 0 1.5em;
     background-color: #fff5f5;
@@ -96,13 +96,74 @@ section {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
-    padding-top: 1em;
-    background-color: ;
+    padding: 1em 0;
+    background-color: inherit;
 }
 
 .header-part h1 {
     margin-left: 1em;
+    background-color: inherit;
+    color: #221524;
 }
+
+.header-part img {
+    background-color: inherit;
+}
+
+.header-group {
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-group h2 {
+    background-color: inherit;
+    color: #221524;
+    font-size: 1.25rem;
+    width: 53vw;
+}
+
+.header-group img {
+    background-color: inherit;
+}
+
+.group {
+    background-color: inherit;
+    margin-bottom: 3em;
+}
+
+.text-part {
+    background-color: inherit;
+}
+
+.text-part p {
+    background-color: inherit;
+    color: #7a697d;
+    display: none;
+    margin-top: 1.5em;
+    line-height: 1.5em;
+    width: 62vw;
+}
+
+.first-group-img2 {
+    display: none;
+}
+
+.second-group-img2 {
+    display: none;
+}
+
+.third-group-img2 {
+    display: none;
+}
+
+.fourth-group-img2 {
+    display: none;
+}
+
+
+
+
 
 
 
