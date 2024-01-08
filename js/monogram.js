@@ -4,7 +4,7 @@ const shopBtnList = document.querySelectorAll('.shop-btn')
 
 
 productList.forEach(product => {
-    product.addEventListener('mouseover', () => {
+    product.addEventListener('click', () => {
         let index = product.id
         shopBtnList[index].style.display = 'block' 
         priceList[index].style.display = 'none'
@@ -12,25 +12,10 @@ productList.forEach(product => {
 })
 
 productList.forEach(product => {
-    product.addEventListener('mouseout', () => {
+    product.addEventListener('click', () => {
         let index = product.id
         shopBtnList[index].style.display = 'none' 
         priceList[index].style.display = 'block'
     })
 })
 
-productList.forEach(product => {
-    product.addEventListener('touchstart', () => {
-        let index = product.id
-        shopBtnList[index].style.display = 'block' 
-        priceList[index].style.display = 'none'
-    })
-})
-
-productList.forEach(product => {
-    product.addEventListener('touchend', () => {
-        let index = product.id
-        shopBtnList[index].style.display = 'none' 
-        priceList[index].style.display = 'block'
-    })
-})
