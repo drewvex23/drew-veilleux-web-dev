@@ -19,3 +19,18 @@ productList.forEach(product => {
     })
 })
 
+productList.forEach(product => {
+    product.addEventListener('touchstart', () => {
+        let index = product.id
+        shopBtnList[index].style.display = 'block' 
+        priceList[index].style.display = 'none'
+    })
+})
+
+productList.forEach(product => {
+    product.addEventListener('touchend', () => {
+        let index = product.id
+        shopBtnList[index].style.display = 'none' 
+        priceList[index].style.display = 'block'
+    })
+})
