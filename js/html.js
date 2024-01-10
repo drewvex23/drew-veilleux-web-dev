@@ -1,7 +1,8 @@
 const imageList = document.querySelectorAll('.image')
 const imageTwoList = document.querySelectorAll('.image-two')
 const textList = document.querySelectorAll('.text')
-
+const hamburgerMenu = document.querySelector('.hamburger-menu')
+const linkArea = document.querySelector('.link-area')
 
 imageList.forEach(eachImg => {
     eachImg.addEventListener('click', () => {
@@ -20,3 +21,9 @@ imageTwoList.forEach(eachImg => {
         textList[index].style.display = 'none'
     })
 })
+
+
+hamburgerMenu.addEventListener('click', () => {
+    linkArea.style.display = 'block'
+})
+hamburgerMenu

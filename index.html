@@ -14,6 +14,10 @@
     
     <header>
         <h1 class="header-title"><a class="header-links" href="index.html" target=""><i class="fa-solid fa-school"></i></a> | My Website</h1>
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
         <ul class="list">
             <li class="list-item"><a class="header-links" href="./htmls/abstract.html">Abstract Site</a></li>
             <li class="list-item"><a class="header-links" href="./htmls/strawberries.html">Strawberries</a></li>
@@ -21,6 +25,8 @@
             <li class="list-item"><a class="header-links" href="./htmls/rps.html">RPS</a></li>
             <li class="list-item"><a class="header-links" href="./htmls/monogram.html">Monogram</a></li>
         </ul>
+
+        
 
     </header>
     
@@ -77,7 +83,16 @@
                 </div>
             </div>
         </div>
-
+        
+        <div class="link-area">
+            <div class="link-area-list">
+                <div class="list-item"><a class="header-links" href="./htmls/abstract.html">Abstract Site</a></div>
+                <div class="list-item"><a class="header-links" href="./htmls/strawberries.html">Strawberries</a></div>
+                <div class="list-item"><a class="header-links" href="./htmls/flex-box.html">Flex Box</a></div>
+                <div class="list-item"><a class="header-links" href="./htmls/rps.html">RPS</a></div>
+                <div class="list-item"><a class="header-links" href="./htmls/monogram.html">Monogram</a></div>
+            </div>
+        </div>
 
     </section>
 
@@ -98,16 +113,16 @@
                 
                 <div class="full-name-divider">
                     <div class="indiv-first">
-                        <input size="12" type="text" id="first-name" required>
+                        <input size="9" type="text" id="first-name" required>
                         <label for="first-name">First Name</label>
                     </div>
                             
                     <div class="indiv-middle">
-                        <input size="12" type="text" name="" id="middle-name" required>
+                        <input size="9" type="text" name="" id="middle-name" required>
                         <label for="middle-name">Middle Name</label>
                     </div>
                     <div class="indiv-last">
-                        <input size="15" type="text" name="" id="last-name" required>
+                        <input size="12" type="text" name="" id="last-name" required>
                         <label for="last-name">Last Name</label>
                     </div>
                 </div>
@@ -127,12 +142,12 @@
                     <div class="current-address-inner">
                         <div class="top-sect">
                             <div>
-                                <input size="55" type="text" id="street-address">
+                                <input size="45" type="text" id="street-address">
                                 <label for="street-address">Street Address</label>
                             </div>
                                 
                             <div>
-                                <input size="55" type="text" id="street-address2">
+                                <input size="45" type="text" id="street-address2">
                                 <label for="street-address2">Street Address Line 2</label>
                             </div>
                                 
@@ -140,23 +155,23 @@
                             
                         <div class="mid-section-address">
                             <div>
-                                <input size="24" type="text" id="city">
+                                <input size="20" type="text" id="city">
                                 <label for="city">City</label>
                             </div>
                             <div>
-                                <input size="24" type="text" id="state-province">
+                                <input size="20" type="text" id="state-province">
                                 <label for="state-province">State / Province</label>
                             </div>
                                 
                         </div>
                         <div class="bottom-section-address">
                             <div>
-                                <input size="24" type="text" id="postal-zip">
+                                <input size="20" type="text" id="postal-zip">
                                 <label for="postal-zip">Postal / Zip Code</label>
                             </div>
                                 
                             <div>
-                                <select name="Country" class="country-select" required>
+                                <select style="width: 175px;" name="Country" class="country-select" required>
                                     <option value="please-select">Please Select</option>
                                     <option value="united-states">United States</option>
                                     <option value="paraguay">Paraguay</option>
@@ -178,7 +193,7 @@
             <div class="email-address-sect" >
                 <p>Email Address <span style="color: red;">*</span></p>
                 
-                <input size="55" type="email" placeholder="ex: myname@example.com" required>
+                <input size="45" type="email" placeholder="ex: myname@example.com" required>
                 
             </div>
     
@@ -187,12 +202,12 @@
                 
                 <div class="phone-num-divider">
                     <div>
-                        <input type="text" name="" id="area-code" size="23">
+                        <input type="text" name="" id="area-code" size="17">
                         <label for="">Area Code</label>
                     </div>
                     <p class="dash-line"> - </p>
                     <div>
-                        <input type="text" name="" id="phone-number" size="23">
+                        <input type="text" name="" id="phone-number" size="17">
                         <label for="phone-number">Phone Number</label>
                     </div>
                 </div>
