@@ -5,6 +5,7 @@ const textList = document.querySelectorAll('.text')
 
 imageList.forEach(eachImg => {
     eachImg.addEventListener('click', () => {
+        let index = parseInt(eachImg.id)
         imageList[index].style.display = 'none'
         imageTwoList[index].style.display = 'block'
         textList[index].style.display = 'block'
