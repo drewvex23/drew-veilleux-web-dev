@@ -50,6 +50,14 @@ header {
     background-color: inherit;
 }
 
+.hamburger-menu-open {
+    display: none;
+}
+
+.link-area {
+    display: none;
+}
+
 @media (max-width: 1020px) {
     .list {
         display: none;
