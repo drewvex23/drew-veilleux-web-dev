@@ -52,6 +52,7 @@ header {
 
 .hamburger-menu-open {
     display: none;
+    background-color: inherit;
 }
 
 .link-area {
