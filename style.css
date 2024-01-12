@@ -60,6 +60,10 @@ header {
     .hamburger-menu {
         display: block;
     }
+    .hamburger-menu-open {
+        display: none;
+        background-color: inherit;
+    }
     .link-area {
         position: absolute;
         top: 62px;
@@ -70,6 +74,7 @@ header {
         align-items: center;
         font-family: 'Times New Roman', Times, serif;
         display: none;
+        border: 1px solid rgb(47, 49, 49);
     }
     .link-area-list {
         display: flex;
