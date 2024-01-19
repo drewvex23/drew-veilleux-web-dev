@@ -1,6 +1,6 @@
 * {
     margin: 0px;
-    background-color: gray;
+    
     color: rgb(219, 209, 209);
     box-sizing: border-box;
 }
@@ -84,6 +84,7 @@ header {
         font-family: 'Times New Roman', Times, serif;
         display: none;
         border: 1px solid rgb(47, 49, 49);
+        background-color: gray;
     }
     .link-area-list {
         display: flex;
@@ -115,33 +116,148 @@ header {
 
 
 
-.section1 {
-    font-family: 'Work Sans', sans-serif;
-    background-color: #f7daeb;
-    height: 51em;
-    margin: 0;
-    padding: 0;
+
+
+
+.section2 {
+    padding: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.sect2-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 7em;
+}
+
+.sect2-header {
+    text-align: center;
+}
+
+.sect2-header h3 {
+    color: #4c4e61;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.sect2-header h2 {
+    color: #4c4e61;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.sect2-header p {
+    color: #a3a5ae;
+    font-family: 'Poppins', sans-serif;
+    width: 670px;
+    font-size: 1.25rem;
+    padding: 1em 0;
+    padding-bottom: 3em;
+}
+
+
+.sect2-container h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: .25em;
+    color: #4c4e61;
+}
+
+.sect2-container p {
+    color: #a3a5ae;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2rem;
+}
+
+.sect2-img-cont{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+.sect2-container {
+    width: 375px;
+    padding: 1em;
+    margin-bottom: 1.25em;
+    border-top: 5px solid;
+    box-shadow: 7px 7px 10px;
+    margin-bottom: 2.5em;
+    border-radius: 1em;   
+}
+
+.first-cont {
+    border-color: #45d3d3;
+}
+
+.second-cont {
+    border-color: #ea5353;
+}
+
+.third-cont {
+    border-color: #fcaf4a;
+}
+
+.forth-cont {
+    border-color:  #549ef2;
+}
+
+.sect2-group-containers {
+    margin: 0 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section1 {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f7daeb;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .hero-image {
     width: 100%;
     background-color: #f7daeb;
+    height: auto;
+    padding-bottom: 25em;
 }
 
 .hero-image img {
     width: 100%;
-    
+    max-height: 20em;
 }
 
 .hover-div {
-    width: 80%;
+    width: 350px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 18em;
+    top: 80em;
     border-radius: .5em;
     padding: 0 1.5em;
     background-color: #fff5f5;
@@ -197,7 +313,7 @@ header {
     display: none;
     margin-top: 1.5em;
     line-height: 1.5em;
-    width: 62vw;
+    width: 310px;
 }
 
 .header-group .image-two {
@@ -210,7 +326,17 @@ header {
 
 
 
-
+@media (max-width: 1210px) {
+    .sect2-header p {
+        width: 390px;
+    }
+    .sect2-div {
+        flex-direction: column;
+    }
+    .hover-div {
+        top: 115em;
+    }
+}
 
 
 
@@ -221,21 +347,26 @@ header {
 input {
     display: block;
     border: 1px black solid;
+    background-color: gray;
 }
 
 select {
     display: block;
+    background-color: gray;
 }
 
 main {
     display: flex;
     flex-direction: column;
     padding: 0 7vw;
-    
+    background-color: gray;
+    padding-bottom: 5em;
+    padding-top: 2em;
 }
 
 .job-app {
     padding: 1em 0;
+    background-color: gray;
 }
 
 .full-name-sect {
@@ -245,16 +376,19 @@ main {
     justify-content: space-between;
     padding: 1em 0;
     padding-bottom: 2em;
+    background-color: gray;
 }
 
 .full-name-divider {
     display: flex;
     flex-direction: row;
     margin-right: 1em;
+    background-color: gray;
 }
 
 .full-name-divider div {
     margin-right: 1em;
+    background-color: gray;
 }
 
 
@@ -263,42 +397,50 @@ main {
     display: flex;
     justify-content: space-between;
     padding-bottom: 2em;
+    background-color: gray;
 }
 
 .current-address-inner {
     width: 100%;
     padding-bottom: .5em;
+    background-color: gray;
 }
 
 .top-sect {
     width: 100%;
+    background-color: gray;
 }
 
 .top-sect div {
     padding-bottom: .5em;
+    background-color: gray;
 }
 
 .mid-section-address {
     display: flex;
-
+    background-color: gray;
 }
 
 .mid-section-address div {
     padding-right: 1em;
     padding-bottom: .5em;
+    background-color: gray;
 }
 
 .bottom-section-address {
     display: flex;
+    background-color: gray;
 }
 
 .bottom-section-address div {
     padding-right: 1em;
+    background-color: gray;
 }
 
 .country-select {
     width: 205px;
     border: 1px black solid;
+    background-color: gray;
 }
 
 .email-address-sect {
@@ -306,6 +448,7 @@ main {
     justify-content: space-between;
     padding-right: 1em;
     padding-bottom: 1em;
+    background-color: gray;
 }
 
 .phone-number-sect {
@@ -313,22 +456,27 @@ main {
     justify-content: space-between;
     padding-right: 1em;
     padding-bottom: 1em;
+    background-color: gray;
 }
 
 .phone-number-sect{
     display: flex;
+    background-color: gray;
 }
 
 .phone-num-divider {
     display: flex;
+    background-color: gray;
 }
 
 ::placeholder {
     color: rgb(219, 209, 209);
+    background-color: gray;
 }
 
 .dash-line {
     padding: 0 .5em;
+    
 }
 
 .applying-position-sect {
@@ -336,11 +484,13 @@ main {
     justify-content: space-between;
     padding-right: 11.5em;
     padding-bottom: 1em;
+    
 }
 
 .applying-position-sect select {
     border: 1px black solid;
     width: 250px;
+    
 }
 
 .strt-date-sect {
@@ -377,6 +527,7 @@ main {
     height: 2.5em;
     border: 1px black solid;
     border-radius: .5em;
+    background-color: gray;
 }
 
 .agree-terms-sect{
@@ -417,18 +568,21 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: rgb(47, 49, 49);
-    margin: 20% 0px;
+    
     padding-left: 5%;
     padding-right: 5%;
+   
 }
 
 .footer-left {
     background-color: inherit;
+    background-color: rgb(47, 49, 49);
 }
 
 .footer-left-text {
     background-color: inherit;
     margin: 10px;
+    background-color: rgb(47, 49, 49);
 }
 
 .footer-middle {
