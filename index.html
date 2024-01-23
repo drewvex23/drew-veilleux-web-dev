@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Drew Veilleux</title>
 </head>
 <body>
@@ -148,173 +151,21 @@
 
     <main>
 
-        <form action="job-app">
-            <div class="job-app">
-                <h1>Job Application</h1>
-                <p>Please complete the form below below to apply for a position with us.</p>
-            </div>
-            <hr>
-    
-            <div class="full-name-sect">
-                
-                <div class="full-title">
-                    <p>Full Name <span style="color: red;">*</span></p>
-                </div>
-                
-                <div class="full-name-divider">
-                    <div class="indiv-first">
-                        <input size="9" type="text" id="first-name" required>
-                        <label for="first-name">First Name</label>
-                    </div>
-                            
-                    <div class="indiv-middle">
-                        <input size="9" type="text" name="" id="middle-name" required>
-                        <label for="middle-name">Middle Name</label>
-                    </div>
-                    <div class="indiv-last">
-                        <input size="12" type="text" name="" id="last-name" required>
-                        <label for="last-name">Last Name</label>
-                    </div>
-                </div>
-                
-                    
-                    
-                
-            </div>
-    
-            <div class="current-address-sect">
-                
-                <div class="add-title">
-                    <p>Current Address</p>
-                </div>
-                
-                <div>
-                    <div class="current-address-inner">
-                        <div class="top-sect">
-                            <div>
-                                <input size="45" type="text" id="street-address">
-                                <label for="street-address">Street Address</label>
-                            </div>
-                                
-                            <div>
-                                <input size="45" type="text" id="street-address2">
-                                <label for="street-address2">Street Address Line 2</label>
-                            </div>
-                                
-                        </div>
-                            
-                        <div class="mid-section-address">
-                            <div>
-                                <input size="20" type="text" id="city">
-                                <label for="city">City</label>
-                            </div>
-                            <div>
-                                <input size="20" type="text" id="state-province">
-                                <label for="state-province">State / Province</label>
-                            </div>
-                                
-                        </div>
-                        <div class="bottom-section-address">
-                            <div>
-                                <input size="20" type="text" id="postal-zip">
-                                <label for="postal-zip">Postal / Zip Code</label>
-                            </div>
-                                
-                            <div>
-                                <select style="width: 175px;" name="Country" class="country-select" required>
-                                    <option value="please-select">Please Select</option>
-                                    <option value="united-states">United States</option>
-                                    <option value="paraguay">Paraguay</option>
-                                    <option value="monaco">Monaco</option>
-                                    <option value="germany">Germany</option>
-                                    <option value="mexico">Mexico</option>
-                                        
-                                </select>
-                                <label for="countrty">Country</label>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-                
-                
-            </div>
-    
-            <div class="email-address-sect" >
-                <p>Email Address <span style="color: red;">*</span></p>
-                
-                <input size="45" type="email" placeholder="ex: myname@example.com" required>
-                
-            </div>
-    
-            <div class="phone-number-sect">
-                <p>Phone Number</p>
-                
-                <div class="phone-num-divider">
-                    <div>
-                        <input type="text" name="" id="area-code" size="17">
-                        <label for="">Area Code</label>
-                    </div>
-                    <p class="dash-line"> - </p>
-                    <div>
-                        <input type="text" name="" id="phone-number" size="17">
-                        <label for="phone-number">Phone Number</label>
-                    </div>
-                </div>
-                
-                    
-                
-            </div>
-    
-            <div class="applying-position-sect">
-                <p>Applying for Position <span style="color: red;">*</span></p>
-                
-                <select name="" id="" required>
-                    <option value="pkease-select">Please Select</option>
-                    <option value="ui-ux-dev">UI/UX Developer</option>
-                    <option value="front-end-dev">Front-End Developer</option>
-                    <option value="back-end-dev">Back-End Developer</option>
-                </select>
-                
-            </div>
-    
-            <div class="strt-date-sect">
-                <p>Start date</p>
-                
-                <input type="date">
-                
-            </div>
-    
-            <div class="upload-resume-sect">
-                <p>Upload Resume <span style="color: red;">*</span></p>
-                
-                <input type="file" required>
-                
-            </div>
-    
-            <div class="take-photo-sect">
-                <p>Take Photo</p>
-                
-                <button>Take Photo</button>
-                    
-                
-            </div>
-    
-            <div class="agree-terms-sect">
-                
-                <input type="checkbox" required>
-                <label for="checkbox">I agree <a href="" style="color: aqua; text-decoration: none;">terms & conditions</a>. <span style="color: red;">*</span></label>
-                
-            </div>
-    
-            <div class="submit-sect">
-                
-                <input type="submit"></input>
-                
-            </div>
-        </form>
+        <div class="explanation-sect">
+            <h3>Learn to code by watching others</h3>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
 
-        
+        <div class="form-sect">
+            <button>Try it free 7 days then $20/mo. thereafter</button>
+            <form class="the-form" action="sign-up">
+                <input class="first-name" type="text" id="first-name" required placeholder="First Name">
+                <input class="last-name" type="text" id="last-name" required placeholder="Last Name">
+                <input class="email-address" type="email" id="email-address" required placeholder="Email Address">
+                <input class="password" type="password" id="password" required placeholder="Password">
+                <input class="submit-btn" type="submit" required placeholder="CLAIM YOUR FREE TRIAL">
+            </form>
+        </div>
 
     </main>
     
