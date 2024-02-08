@@ -349,8 +349,90 @@
     border-radius: 5em;
     animation: pulse 2s linear;
     animation-fill-mode: forwards;
+    overflow: hidden;
+    padding: 5em;
+    display: flex;
+    align-items: center;
+    
 }
 
+.square {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    background-color: white;
+    top: 215px;
+    left: 435px;
+    transform: rotate(-45deg) translateY(35px);
+    transition: 1s;
+}
+
+.inner-div p {
+    font-size: 2.5em;
+    color: blueviolet;
+    width: 225px;
+    font-weight: 700;
+    font-style: italic;
+    animation: ease-in-out;
+    animation: 2s linear;
+}
+
+
+
+.inner-div img {
+    width: 40px;
+    
+    animation: wave 1s infinite;
+}
+
+@keyframes wave {
+    0% { 
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(-60deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
+    }
+
+}
+
+.inner-div {
+    display: flex;
+    position: absolute;
+    width: 500px;
+    justify-content: center;
+    left: 200px;
+    top: 175px;
+    align-items: center;
+    animation: inner 2s;
+    
+}
+
+@keyframes inner {
+    0% {
+        opacity: 0;
+        
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
 
 
 
@@ -365,7 +447,12 @@
         width: 500px;
     }
 
-    100% {
+    80% {
+        left: 280px;
+        width: 340px;
+    }
+
+    100%{
         left: 250px;
         width: 400px;
     }
