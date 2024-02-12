@@ -6,91 +6,12 @@
 }
 
 
-body {
-    font-family: sans-serif;
-    font-size: 15px;
-    background-color: red;
-}
 
-.outter-box {
-   background-color: red; 
-   margin-bottom: 5px;
-}
-.inside-box {
-    background-color: white;
-    border: 4px black solid;
-    width: 70%;
-    margin: 0px auto;
-    
-}
 
-.title {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    font-size: 30px;
-    margin: 0px;
-    background-color: white;
-    color: black;
-}
 
-.intro-text {
-    margin: 20px 30px;
-    background-color: inherit;
-    color: black;
-}
 
-.image-container {
-    background-color: inherit;
-}
 
-.straw-image {
-    display: block;
-    margin: 0px auto;
-    border: 4px red dashed;
-    background-color: white;
-}
 
-.where-plant {
-    color: red;
-    font-size: 18px;
-    margin:  20px;
-    font-style: italic;
-    background-color: inherit;
-}
-
-.conditions {
-    margin:  20px 20px;
-    background-color: inherit;
-    color: black;
-}
-
-.condition-list {
-    margin:  20px 20px;
-    background-color: white;
-    color: black;
-}
-
-.list-index {
-    background-color: inherit;
-    color: black;
-}
-
-.plant-instructions {
-    margin:  20px 20px;
-    background-color: inherit;
-    color: black;
-}
-
-.footer {
-    color: red;
-    font-size: 18px;
-    margin:  20px;
-    font-style: italic;
-    font-weight: bold;
-    background-color: inherit;
-}
 
 
 
