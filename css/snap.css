@@ -1,13 +1,483 @@
 * {
     margin: 0px;
-    background-color: gray;
-    color: rgb(219, 209, 209);
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.menu-area {
+    display: none;
+}
+
+.menu-img {
+    display: none;
     
 }
 
-body {
-    background-color: white;
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    
+}
+
+.title-div {
+    padding-top: 1em;
+}
+
+section {
+    padding: 5em 15%;
+}
+
+section {
+    display: flex;
+}
+
+.mobile-hero {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+}
+
+.left-side-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
+.link-div {
+    font-size: 1.1em;
+    color: gray;
+    text-decoration: none;
+    margin-left: 1em;
+    display: flex;
+}
+.link-div a{
+    font-size: 1.1em;
+    color: gray;
+    text-decoration: none;
+    margin-left: 4em;
+}
 
+.link-div a:hover{
+    color: black;
+}
+
+.link-div p {
+    font-size: 1.1em;
+    color: gray;
+    text-decoration: none;
+    margin-left: 4em;
+}
+
+.link-div p:hover {
+    color: black;
+}
+
+.feature-links-desktop {
+    display: none;
+    position: absolute;
+    left: 9em;
+    top: 5em;
+    width: 130px;
+    flex-direction: column;
+    padding: 0;
+    background-color: whitesmoke;
+    padding-left: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: .4em;
+    box-shadow: 0em 0em 20em;
+}
+
+.feature-links-desktop img {
+    margin-right: .5em;
+}
+
+.feature-links-desktop a {
+    font-size: 1.2em;
+    color: gray;
+    text-decoration: none;
+    margin: .35em 0;
+    
+}
+
+
+.company-area-links-desktop img {
+    margin-right: .5em;
+}
+
+.company-area-links-desktop a {
+    font-size: 1.2em;
+    color: gray;
+    text-decoration: none;
+    margin: .35em 0;
+    
+}
+
+
+.features-link-area-desktop span {
+    padding-right: .5em;
+}
+
+.company-link-area-desktop span {
+    padding-right: .5em;
+}
+
+.company-area-links-desktop {
+    display: none;
+    position: absolute;
+    left: 24em;
+    top: 5em;
+    width: 100px;
+    flex-direction: column;
+    padding: 0;
+    background-color: whitesmoke;
+    padding-left: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: .4em;
+    box-shadow: 0em 0em 20em;
+}
+
+.login-button-desktop {
+    font-size: 1.2em;
+    color: gray;
+    height: 2.25em;
+    background-color: white;
+    width: 5em;
+    border: none;
+    
+}
+
+.login-button-desktop:hover {
+    color: black;
+}
+
+.register-button-desktop:hover {
+    color: black;
+    border: black 1px solid;
+}
+
+.register-button-desktop {
+    font-size: 1.2em;
+    color: gray;
+    height: 2.25em;
+    background-color: white;
+    width: 5em;
+    border-radius: .75em;
+    border: 1.5px solid gray;
+}
+
+.right-side-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-div-main {
+    width: 50%;
+    padding-top: 5em;
+}
+
+.left-div-main h1 {
+    font-size: 6em;
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+    width: 600px;
+}
+
+.left-div-main p {
+    font-size: 1.5em;
+    color: gray;
+    margin: 2.25em 0;
+    width: 500px;
+}
+
+.right-div-main {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-hero {
+    height: 50%;
+    
+}
+
+.left-div-main button {
+    color: white;
+    background-color: black;
+    width: 7em;
+    height: 2.5em;
+    border-radius: .75em;
+    border: 0;
+    font-size: 1.4em;
+}
+
+.left-div-main button:hover {
+    background-color: white;
+    border: black 1px solid;
+    color: black;
+}
+
+.sponsor-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 1.5em;
+    margin-top: 7em;
+    padding-left: 0;
+}
+
+
+@media (max-width: 1600px) {
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5em;
+    }
+
+    .left-side-header {
+        display: flex;
+        
+    }
+    
+    .left-div-main {
+        width: 0;
+        padding-top: 5em;
+    }
+
+    .menu-img {
+        display: none;
+        width: 100%;
+    }
+    
+    section {
+        display: flex;
+        padding: 0;
+    }
+    
+    .menu-area {
+        display: none;
+    }
+    
+    .link-div {
+        display: none;
+    }
+    
+    .menu-img {
+        display: block;
+    }
+
+    .right-side-header button{
+        display: none;    
+    }
+    
+    .mobile-hero {
+        display: block;
+        width: 100%;
+    }
+
+    .desktop-hero {
+        display: none;
+    }
+
+    section {
+        flex-direction: column-reverse;
+    }
+
+    .left-div-main h1 {
+        font-size: 3em;
+        margin-top: .6em;
+    }
+
+    .left-div-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 1em;
+    }
+
+    .left-div-main p {
+        font-size: 1.4em;
+        color: gray;
+        width: 400px;
+        text-align: center;
+        line-height: 1.5em;
+        margin: 1em;
+    }
+
+    .left-div-main button {
+        margin-top: .3em;
+        margin-bottom: 1em;
+    }
+
+    .sponsor-div {
+        width: 100%;
+        margin-top: 4em;
+    }
+
+    .left-div-main button {
+        color: white;
+        background-color: black;
+        width: 7em;
+        height: 2.5em;
+        border-radius: .75em;
+        border: 0;
+        font-size: 1.4em;
+    }
+    
+    .sponsor-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 1.5em;
+        margin-top: 2em;
+    }
+    
+    .menu-area {
+        position: absolute;
+        width: 250px;
+        height: 900px;
+        right: 0;
+        top: 0;
+        background-color: white;
+        padding: 1.5em;
+        display: none;
+    }
+    
+    .close-menu-area {
+        display: flex;
+        justify-content: right;
+    }
+    
+    .features-drop {
+        display: flex;
+        
+    }
+    
+    .features-link-area {
+        margin-top: 2em;
+        
+    }
+    
+    .features-link-area p {
+        color: gray;
+        font-size: 1.25em;
+    }
+    
+    .features-link-area span {
+        padding-right: .5em;
+    }
+    
+    .feature-links {
+        display: none;
+        flex-direction: column;
+        padding-left: 1em;
+        margin-top: 1em;
+    }
+    
+    .features-up-arrow {
+        display: none;
+    }
+    
+    .company-arrow-up {
+        display: none;
+    }
+    
+    .feature-links a {
+        padding: .5em;
+        color: gray;
+        text-decoration: none;
+        font-size: 1.2em;
+        
+    }
+    
+    .left-div-main h1 {
+        width: fit-content;
+    }
+
+    .company-area-links {
+        display: none;
+        flex-direction: column;
+        padding-left: 1em;
+        margin-top: 1em;
+    }
+    
+    .right-div-main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .company-link-area p {
+        color: gray;
+        font-size: 1.25em;
+        margin-bottom: 0em;
+        margin-top: 1em;
+    }
+    
+    .company-area-links a {
+        padding: .5em;
+        color: gray;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    
+    .company-link-area span {
+        padding-right: .5em;
+    }
+    
+    .other-two-links {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .career-link {
+        color: gray;
+        text-decoration: none;
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+    
+    .about-link {
+        color: gray;
+        text-decoration: none;
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+
+    .menu-button-div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+    
+    .menu-button-div button {
+        font-size: 1.2em;
+        color: gray;
+        height: 2.5em;
+        background-color: white;
+        margin-top: 1em;
+    }
+    
+    .login-button-menu {
+        border: none;
+        
+    }
+    
+    .register-button-menu {
+        border-radius: .75em;
+        border: 1.5px solid gray;
+    }
+}   
