@@ -424,7 +424,9 @@ main {
     font-style: italic;
 }
 
-
+.condition {
+    text-transform: capitalize;
+}
 
 
 
