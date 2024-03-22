@@ -68,15 +68,15 @@ async function getWeather(latWeather, longWeather) {
         const rain = ['shower rain','rain','mist']
 
         if (clouds.includes(conditionData)) {
-            weatherImgText.src = '/Images/Html-images/partly-cloudy.png'
+            weatherImgText.src = './Images/Html-images/partly-cloudy.png'
         } else if (rain.includes(conditionData)) {
-            weatherImgText.src = '/Images/Html-images/rain-storm.png'
+            weatherImgText.src = './Images/Html-images/rain-storm.png'
         } else if (conditionData == 'thunderstorm'){
-            weatherImgText.src == '/Images/Html-images/rain-storm.png'
+            weatherImgText.src == './Images/Html-images/rain-storm.png'
         } else if (conditionData == 'snow'){
-            weatherImgText.src == '/Images/Html-images/snow.png'
+            weatherImgText.src == './Images/Html-images/snow.png'
         } else if (conditionData == 'clear sky'){
-            weatherImgText.src == '/Images/Html-images/sunny.png'
+            weatherImgText.src == './Images/Html-images/sunny.png'
         }
 
 
