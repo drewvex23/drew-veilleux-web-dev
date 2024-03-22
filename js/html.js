@@ -48,56 +48,12 @@ hamburgerMenuOpen.addEventListener('click', () => {
 
 
 
-const dateObject = new Date()
-let month = dateObject.getMonth() + 1
-const year = dateObject.getFullYear()
-let day = dateObject.getDate()
-let hour = dateObject.getHours()
-let minute = dateObject.getMinutes()
-let amPm = 'AM'
-
-if (hour > 12) {
-    hour = hour - 12
-}
-
-if (hour >= 12) {
-    amPm = 'PM'
-}
-
-
-if (minute < 10) {
-    minute = '0' + minute.toString()
-}
-
-
-
-
-
-
-if (month < 10) {
-    month = '0' + month.toString()
-}
-
-if (day < 10) {
-    day = '0' + day.toString()
-}
-
-let time = `${hour}:${minute} ${amPm}`
-weatherTime.textContent = time
-let date = `${month}/${day}/${year}`
-dateText.textContent = date
-copyYear.textContent = year
-
-
-
-let apiKey = 'b58560c26d543a0b3de36f6fa5553882'
-let lat = '43.6591'
-let lon = '-70.2568'
-let units = 'imperial'
-let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`
-
-async function getWeather() {
-
+async function getWeather(latWeather, longWeather) {
+    let lat = latWeather
+    let lon = longWeather
+    let apiKey = 'b58560c26d543a0b3de36f6fa5553882'
+    let units = 'imperial'
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`
     
     try {
         const response = await fetch(url);
@@ -107,9 +63,6 @@ async function getWeather() {
         temperatureText.textContent = currentTemp
         const conditionData = data.weather[0].description
         conditionText.textContent = conditionData
-        const location = data.name
-        locationText.textContent = location
-
 
         const clouds = ['overcast clouds','broken clouds','scattered clouds','few clouds']
         const rain = ['shower rain','rain','mist']
@@ -132,5 +85,70 @@ async function getWeather() {
     }
 }
 
+let ipKey = 'd4a9e1c9d2914ba98f7c9735cff39628'
+let ipUrl = `https://api.geoapify.com/v1/ipinfo?&apiKey=${ipKey}`
 
-getWeather()
+async function getIp() {
+    try {
+        const response = await fetch(ipUrl);
+        const ipData = await response.json();
+        console.log(ipData)
+        let ipCity = ipData.city.name
+        let ipState = ipData.state.name
+        let ipLat = ipData.location.latitude
+        let ipLong = ipData.location.longitude 
+        locationText.textContent = `${ipCity}, ${ipState}`  
+        getWeather(ipLat.toString(),ipLong.toString())
+        timeDate(ipLat.toString(),ipLong.toString())
+    } catch (error) {
+        console.log(error)
+    }
+
+    
+    
+
+}
+
+getIp()
+
+async function timeDate(latTime, longTime) {
+    let lat = latTime
+    let lon = longTime
+    let timeApi = 'a3dn7fPR/nDO5oyr3RAPqg==VCk3sUpGYdRiK8av'
+        
+    
+    try {
+        const timeUrl = `https://api.api-ninjas.com/v1/worldtime?lat=${lat}&lon=${lon}`
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-Api-Key': timeApi
+            }
+        }
+        const response = await fetch(timeUrl, options);
+        const timeData = await response.json();
+        console.log(timeData)
+        let hour = timeData.hour
+        let minute = timeData.minute
+        let month = timeData.month
+        let day = timeData.day
+        let year = timeData.year
+        
+        if (hour > 12) {
+            let hour = hour - 12
+        }
+
+        if (hour >= 12) {
+            amPm = 'PM'
+        }
+        
+        let time = `${hour}:${minute} ${amPm}`
+        weatherTime.textContent = time
+        let date = `${month}/${day}/${year}`
+        dateText.textContent = date
+        copyYear.textContent = year
+        
+        } catch (error) {
+            console.log(error)
+        }
+}
