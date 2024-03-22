@@ -127,7 +127,6 @@ async function timeDate(latTime, longTime) {
         }
         const response = await fetch(timeUrl, options);
         const timeData = await response.json();
-        console.log(timeData)
         let hour = timeData.hour
         let minute = timeData.minute
         let month = timeData.month
