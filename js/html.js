@@ -115,7 +115,7 @@ async function timeDate(latTime, longTime) {
     let lat = latTime
     let lon = longTime
     let timeApi = 'a3dn7fPR/nDO5oyr3RAPqg==VCk3sUpGYdRiK8av'
-        
+    let amPm = 'AM'
     
     try {
         const timeUrl = `https://api.api-ninjas.com/v1/worldtime?lat=${lat}&lon=${lon}`
