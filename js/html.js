@@ -70,7 +70,7 @@ async function getWeather(coords) {
         if (clouds.includes(conditionData)) {
             weatherImgText.src = './Images/Html-images/partly-cloudy.png'
         } else if (rain.includes(conditionData)) {
-            weatherImgText.src = './Images/Html-images/rain-storm.png'
+            weatherImgText.src = './Images/Html-images/rain.png'
         } else if (conditionData == 'thunderstorm'){
             weatherImgText.src == './Images/Html-images/rain-storm.png'
         } else if (conditionData == 'snow'){
