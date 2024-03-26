@@ -65,7 +65,7 @@ async function getWeather(coords) {
         conditionText.textContent = conditionData
 
         const clouds = ['overcast clouds','broken clouds','scattered clouds','few clouds']
-        const rain = ['shower rain','rain','mist']
+        const rain = ['shower rain','rain','mist','light rain', 'moderate rain']
 
         if (clouds.includes(conditionData)) {
             weatherImgText.src = './Images/Html-images/partly-cloudy.png'
