@@ -133,13 +133,15 @@ async function timeDate(latTime, longTime) {
         let day = timeData.day
         let year = timeData.year
         
+        if (hour >= 12) {
+            amPm = 'PM'
+        }
+
         if (hour > 12) {
             let hour = hour - 12
         }
 
-        if (hour >= 12) {
-            amPm = 'PM'
-        }
+        
         
         let time = `${hour}:${minute} ${amPm}`
         weatherTime.textContent = time
