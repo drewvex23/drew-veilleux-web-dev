@@ -132,7 +132,7 @@ async function timeDate(coords) {
         let month = timeData.month
         let day = timeData.day
         let year = timeData.year
-        
+
         let refinedHour = hour
         let amPm = 'AM'
 
@@ -144,7 +144,7 @@ async function timeDate(coords) {
             amPm = 'PM'
         }
         
-        let time = `${refinedHour}:${minute}`
+        let time = `${refinedHour}:${minute} ${amPm}`
         weatherTime.textContent = time
         let date = `${month}/${day}/${year}`
         dateText.textContent = date
