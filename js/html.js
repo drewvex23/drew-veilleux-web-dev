@@ -48,9 +48,9 @@ hamburgerMenuOpen.addEventListener('click', () => {
 
 
 
-async function getWeather(latWeather, longWeather) {
-    let lat = latWeather
-    let lon = longWeather
+async function getWeather(coords) {
+    let lat = coords[0]
+    let lon = coords[1]
     let apiKey = 'b58560c26d543a0b3de36f6fa5553882'
     let units = 'imperial'
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`
@@ -98,8 +98,10 @@ async function getIp() {
         let ipLat = ipData.location.latitude
         let ipLong = ipData.location.longitude 
         locationText.textContent = `${ipCity}, ${ipState}`  
-        getWeather(ipLat.toString(),ipLong.toString())
-        timeDate(ipLat.toString(),ipLong.toString())
+        const coords = [ipLat, ipLong]
+        return coords
+
+
     } catch (error) {
         console.log(error)
     }
@@ -109,13 +111,11 @@ async function getIp() {
 
 }
 
-getIp()
-
-async function timeDate(latTime, longTime) {
-    let lat = latTime
-    let lon = longTime
+async function timeDate(coords) {
+    let lat = coords[0]
+    let lon = coords[1]
     let timeApi = 'a3dn7fPR/nDO5oyr3RAPqg==VCk3sUpGYdRiK8av'
-    let amPm = 'AM'
+    
     
     try {
         const timeUrl = `https://api.api-ninjas.com/v1/worldtime?lat=${lat}&lon=${lon}`
@@ -133,17 +133,18 @@ async function timeDate(latTime, longTime) {
         let day = timeData.day
         let year = timeData.year
         
+        let refinedHour = hour
+        let amPm = 'AM'
+
+        if (hour > 12) {
+            refinedHour = hour - 12
+        }
+
         if (hour >= 12) {
             amPm = 'PM'
         }
-
-        if (hour > 12) {
-            let hour = hour - 12
-        }
-
         
-        
-        let time = `${hour}:${minute} ${amPm}`
+        let time = `${refinedHour}:${minute}`
         weatherTime.textContent = time
         let date = `${month}/${day}/${year}`
         dateText.textContent = date
@@ -153,3 +154,9 @@ async function timeDate(latTime, longTime) {
             console.log(error)
         }
 }
+
+getIp()
+    .then(c => timeDate(c))
+
+getIp()
+    .then(c => getWeather(c))
