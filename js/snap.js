@@ -43,7 +43,6 @@ companyDrop.addEventListener('click', () => {
 })
 
 function changeArrowFeature() {
-    
     if (featureArrow.src == 'http://127.0.0.1:5500/Images/Snap-images/icon-arrow-down.svg') {
         featureArea.style.display = 'flex'
         featureArrow.src = '../Images/Snap-images/icon-arrow-up.svg'
